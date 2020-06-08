@@ -1,0 +1,39 @@
+{
+  "name": "@alvaroc1/layout",
+  "version": "1.0.0-b",
+  "main": "main.js",
+  "repository": "https://github.com/alvaroc1/layout.git",
+  "author": "Alvaro Carrasco <simplepic@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-scripts start",
+    "prebuild": "rm -Rf dist && mkdir dist && cp package.json dist/",
+    "build": "tsc --declaration --declarationMap --sourceMap --inlineSources --rootDir src --outDir dist --jsx react --esModuleInterop --lib es2015 --skipLibCheck src/main.ts"
+  },
+  "devDependencies": {
+    "create-react-app": "^3.4.1",
+    "react-scripts": "^3.4.1",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "@material-ui/styles": "^4.10.0",
+    "@types/classnames": "^2.2.10",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "classnames": "^2.2.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
