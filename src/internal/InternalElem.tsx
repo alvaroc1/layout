@@ -8,7 +8,7 @@ type PassThruElementProps = Pick<React.HTMLAttributes<HTMLDivElement>, 'onClick'
 type PassThruCssProps = Pick<React.CSSProperties, 'background'|'fontWeight'|'color'|'outline'|'transform'|'transformOrigin'>
 
 export interface InternalElemProps extends PassThruCssProps, PassThruElementProps {
-  type: 'layout' | 'el' | 'column' | 'row'
+  type: 'layout' | 'el' | 'column' | 'row',
   alignBottom?: boolean,
   centerX?: boolean,
   centerY?: boolean,
@@ -24,6 +24,7 @@ export interface InternalElemProps extends PassThruCssProps, PassThruElementProp
   spacing?: number,
   width?: Length,
 }
+
 
 const shrinkStyles = ({
   flexShrink: 1
@@ -92,8 +93,8 @@ export const elemStyles = createStyles({
     // axis-aware css props
     const [marginMainPre, marginMainPost] = 
       props.type === 'row' ? 
-        ['marginLeft', 'marginRight'] as const:
-        ['marginTop', 'marginBottom'] as const  
+        (['marginLeft', 'marginRight'] /* as const*/):
+        (['marginTop', 'marginBottom'] /* as const*/)
 
     return ({
       display: 'flex',
