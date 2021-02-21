@@ -93,8 +93,8 @@ export const elemStyles = createStyles({
     // axis-aware css props
     const [marginMainPre, marginMainPost] = 
       props.type === 'row' ? 
-        (['marginLeft', 'marginRight'] /* as const*/):
-        (['marginTop', 'marginBottom'] /* as const*/)
+        ['marginLeft', 'marginRight'] as const:
+        ['marginTop', 'marginBottom'] as const
 
     return ({
       display: 'flex',

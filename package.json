@@ -1,6 +1,6 @@
 {
   "name": "@alvaroc1/layout",
-  "version": "1.0.0-q",
+  "version": "1.0.0-r",
   "main": "main.js",
   "repository": "https://github.com/alvaroc1/layout.git",
   "author": "Alvaro Carrasco <simplepic@gmail.com>",
@@ -34,6 +34,12 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
     ]
   }
 }
