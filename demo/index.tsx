@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Layout from './Layout'
+import Layout from '../src/Layout'
 
 ReactDOM.render(
   <Layout.layout height='fill' width='fill' background='red'>

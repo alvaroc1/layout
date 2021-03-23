@@ -1,19 +1,19 @@
 {
   "name": "@alvaroc1/layout",
-  "version": "1.0.0-r",
-  "main": "main.js",
+  "version": "1.0.1",
+  "main": "src/index.ts",
+  "ts:main": "src/index.ts",
+  "typings": "src/index.ts",
   "repository": "https://github.com/alvaroc1/layout.git",
   "author": "Alvaro Carrasco <simplepic@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "prebuild": "rm -Rf dist && mkdir dist && cp package.json dist/",
-    "build": "tsc --declaration --declarationMap --sourceMap --inlineSources --rootDir src --outDir dist --jsx react --esModuleInterop --lib es2015 --skipLibCheck src/main.ts"
+    "start": "ts-node -T fuse"
   },
   "devDependencies": {
-    "create-react-app": "4.0.2",
-    "react-scripts": "4.0.2",
-    "typescript": "4.1.5"
+    "typescript": "4.1.5",
+    "fuse-box": "^4.0.1-next.4",
+    "ts-node": "^9.1.1"
   },
   "dependencies": {
     "@material-ui/styles": "^4.10.0",
@@ -21,8 +21,8 @@
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
     "classnames": "^2.2.6",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
   "browserslist": {
     "production": [
