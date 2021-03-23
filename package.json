@@ -1,12 +1,20 @@
 {
   "name": "@alvaroc1/layout",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "src/index.ts",
   "ts:main": "src/index.ts",
   "typings": "src/index.ts",
   "repository": "https://github.com/alvaroc1/layout.git",
   "author": "Alvaro Carrasco <simplepic@gmail.com>",
   "license": "MIT",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "typesVersions": {
+    "*": {
+      "*": ["src/*"]
+    }
+  },
   "scripts": {
     "start": "ts-node -T fuse"
   },
