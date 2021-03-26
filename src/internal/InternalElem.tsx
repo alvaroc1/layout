@@ -25,7 +25,6 @@ export interface InternalElemProps extends PassThruCssProps, PassThruElementProp
   width?: Length,
 }
 
-
 const shrinkStyles = ({
   flexShrink: 1
 })
